@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+    rel="stylesheet"
+/>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles-responsive.css" />
+    
+    <title> Liste produits</title>
+</head>
+
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="main-sidebar">
+            <header class="aside-header">
+                <div class="brand">
+                    <img src="images/cc1.png" alt="Logo" />
+                    <h3>Webwares</h3>
+                </div>
+                <div class="close" id="closeSidebar">
+                    <span class="material-icons-sharp"> close </span>
+                </div>
+            </header>
+
+            <div class="sidebar" id="sidebar">
+                <ul class="list-items">
+                    <li class="item">
+                        <a href="index.html">
+                            <span class="material-icons-sharp">
+                                dashboard
+                            </span>
+                            <span>Tableau de bord</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#">
+                            <span class="material-icons-sharp">
+                                people
+                            </span>
+                            <span>Clients</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="#">
+                            <span class="material-icons-sharp">
+                                shopping_cart
+                            </span>
+                            <span>Commandes</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="stats" class="">
+                            <span class="material-icons-sharp">
+                                insights
+                            </span>
+                            <span>Statistiques</span>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="messagerie" class="active">
+                            <span class="material-icons-sharp">
+                                textsms
+                            </span>
+                            <span>Messagerie</span>
+                            
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="produits.html">
+                            <span class="material-icons-sharp">
+                                inventory
+                            </span>
+                            <span>Produits</span>
+                        </a>
+                    </li>
+                    </li>
+                    <li class="item">
+                        <a href="stock.html">
+                            <span class="material-icons-sharp">
+                                report
+                            </span>
+                            <span>Gestion des stocks</span>
+                        </a>
+                    </li>
+                    
+                  
+                    <li class="item">
+                        <a href="logout">
+                            <span class="material-icons-sharp">
+                                logout
+                            </span>
+                            <span>Se Deconnecter</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Main -->
+        <main class="main-container">
+            <h1 class="main-title">Dashboard</h1>
+
+            <!-- CARD -->
+            <div class="insights">
+                <div class="card">
+                    <div class="card-container">
+                        <div class="card-header">
+                            <span class="material-icons-sharp">
+                                bar_chart
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-info">
+                                <h3>Ventes totales</h3>
+                                <h1>2.03M</h1>
+                            </div>
+
+                            <div class="card-progress">
+                                <svg width="96" height="96">
+                                    <circle
+                                        id="circle1"
+                                        cx="38"
+                                        cy="38"
+                                        r="36"
+                                        class="stroke-yellow"
+                                    ></circle>
+                                </svg>
+                                <div class="percentage">
+                                    <p>17%</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <small>Sur les 48H precedentes</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-container">
+                        <div class="card-header">
+                            <span class="material-icons-sharp">
+                                add_shopping_cart
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-info">
+                                <h3>Commandes</h3>
+                                <h1>780</h1>
+                            </div>
+
+                            <div class="card-progress">
+                                <svg width="96" height="96">
+                                    <circle
+                                        id="circle2"
+                                        cx="38"
+                                        cy="38"
+                                        r="36"
+                                        class="stroke-fuscha"
+                                    ></circle>
+                                </svg>
+                                <div class="percentage">
+                                    <p>72%</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <small>Sur les 48H precedentes</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-container">
+                        <div class="card-header">
+                            <span class="material-icons-sharp">
+                                group_add
+                            </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-info">
+                                <h3>Clients</h3>
+                                <h1>21</h1>
+                            </div>
+
+                            <div class="card-progress">
+                                <svg
+                                    width="96"
+                                    height="96"
+                                    class="stroke-cyan"
+                                >
+                                    <circle
+                                        id="circle3"
+                                        cx="38"
+                                        cy="38"
+                                        r="36"
+                                    ></circle>
+                                </svg>
+                                <div class="percentage">
+                                    <p>43%</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <small>Sur les 48H precedentes</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RECENT ORDERS -->
+            
+            <template>
+                <div>
+                  <h1>Liste des produits</h1>
+              
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Nom produit</th>
+                        <th>Prix produit</th>
+                        <th>Quantité produit</th>
+                        <th>Catégorie produit</th>
+                        <th>Actions</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr v-for="(res, index) in inventory" :key="index">
+                        <td>{{ res.name }}</td>
+                        <td>{{ res.price }} €</td>
+                        <td>{{ res.quantity }}</td>
+                        <td>{{ res.category }}</td>
+                        <td>
+                          <button type="button" class="btn btn-primary actions" @click="openModal(product, index)">Modifier</button>
+                          <button type="button" class="btn btn-danger actions" @click="deleteProduct(index)">
+                            <i class="fas fa-trash"></i> Supprimer
+                          </button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+              
+                  <div id="editModal" class="modal" v-if="isVisible">
+                    <div class="modal-content">
+                      <span class="close" @click="closeModal">X</span>
+                      <h2>Modifier le produit :</h2>
+              
+                      <form>
+                        <label for="editName">Nom produit:</label><br>
+                        <input type="text" id="editName" v-model="editedProduct.name"><br>
+              
+                        <label for="editPrice">Prix produit:</label><br>
+                        <input type="number" id="editPrice" v-model="editedProduct.price" min="0"><br>
+              
+                        <label for="editQuantity">Quantité produit:</label><br>
+                        <input type="number" id="editQuantity" v-model="editedProduct.quantity" min="0"><br>
+              
+                        <label for="editCategory">Catégorie produit:</label><br>
+                        <select id="editCategory" v-model="editedProduct.category">
+                          <option value="Vêtement">Vêtement</option>
+                          <option value="Pc gaming">Pc gaming</option>
+                          <option value="Chargeur de téléphone">Chargeur de téléphone</option>
+                        </select><br>
+              
+                        <br><br>
+                        <input type="button" value="Enregistrer" class="btn btn-success" @click="saveChanges()">
+                      </form>
+                    </div>
+                  </div>
+              
+                  <section class="add-more">
+                    <p>Ajouter un produit</p>
+                    <form>
+              
+                      <label for="name">Nom produit:</label><br>
+                      <input type="text" id="name" name="name"><br>
+              
+                      <label for="price">Prix produit:</label><br>
+                      <input type="number" id="price" name="price" min="0"><br>
+              
+                      <label for="quantity">Quantité produit:</label><br>
+                      <input type="number" id="quantity" name="quantity" min="0"><br>
+              
+                      <label for="category">Catégorie produit:</label><br>
+                      <select id="category" name="category">
+                        <option value="Vêtement">Vêtement</option>
+                        <option value="Pc gaming">Pc gaming</option>
+                        <option value="Chargeur de téléphone">Chargeur de téléphone</option>
+                      </select><br>
+              
+                      <br><br>
+                      <input type="button" value="Ajouter" class="btn btn-success" @click="addProduct()">
+                    </form>
+              
+                  </section>
+                </div>
+              </template>
+              
+
+        <!-- Sidebar droite -->
+        <aside class="extrabar">
+            <header class="header-right">
+                <button class="toggle-menu-btn" id="openSidebar">
+                    <span class="material-icons-sharp"> menu </span>
+                </button>
+
+                <div class="toggle-theme">
+                    <span class="material-icons-sharp active">
+                        tungsten
+                    </span>
+                    <span class="material-icons-sharp"> dark_mode </span>
+                </div>
+                <div class="profile">
+                    <div class="profile-info">
+                        <p>Salut <strong></p>
+                        <small>Admin</small>
+                    </div>
+                    <div class="profile-image">
+                        <img src="images/le pouce.jpg" alt="" width="100%" />
+                    </div>
+                </div>
+            </header>
+
+            <!-- Info recentes -->
+            <div class="recent-updates">
+                <h2>Infos recentes</h2>
+                <div class="updates-container">
+                    <div class="update">
+                        <div class="profile-image">
+                            <img
+                                src="images/team-1.jpg"
+                                alt=""
+                                width="100%"
+                            />
+                        </div>
+                        <div class="message">
+                            <p>
+                                <strong>Arthur</strong> Lorem ipsum dolor
+                                sit amet consectetur adipisicing elit.
+                            </p>
+                            <small>Il y a 8 minutes</small>
+                        </div>
+                    </div>
+                    <div class="update">
+                        <div class="profile-image">
+                            <img
+                                src="images/team-2.jpg"
+                                alt=""
+                                width="100%"
+                            />
+                        </div>
+                        <div class="message">
+                            <p>
+                                <strong>Alicia</strong> Lorem ipsum, dolor
+                                sit amet consectetur adipisicing.
+                            </p>
+                            <small>Il y a 1 heures</small>
+                        </div>
+                    </div>
+                    <div class="update">
+                        <div class="profile-image">
+                            <img
+                                src="images/team-3.jpg"
+                                alt=""
+                                width="100%"
+                            />
+                        </div>
+                        <div class="message">
+                            <p>
+                                <strong>Thomas</strong> Lorem ipsum dolor
+                                sit amet consectetur adipisicing elit.
+                            </p>
+                            <small>Il y a 3 heures</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+    
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./app.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
